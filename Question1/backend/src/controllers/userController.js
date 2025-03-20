@@ -1,6 +1,6 @@
-import { getTopUsers } from '../models/userModel.js';
+import { ToppUsers } from '../models/userModel.js';
 
-export const getTopUsers = async (req, res) => {
+export const ToppUsers = async (req, res) => {
   try {
     const topUsers = await getTopUsers();
     res.json(topUsers);
