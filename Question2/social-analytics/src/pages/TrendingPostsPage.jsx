@@ -7,7 +7,7 @@ export default function TrendingPostsPage() {
   useEffect(() => {
     const fetchTrendingPosts = async () => {
       try {
-        const { data } = await axios.get("http://20.244.56.144/test/trendingPosts");
+        const { data } = await axios.get("http://hostname/posts");
         setPosts(data);
       } catch (error) {
         console.error("Error fetching trending posts:", error);
